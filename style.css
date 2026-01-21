@@ -1,0 +1,83 @@
+:root {
+    --bg: #f8faff;
+    --primary: #f163e5;
+    --secondary: #ec4899;
+    --dark: #00173d;
+    --gray: #4a4e53;
+    --white: #ffffff;
+    --shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+
+body { background-color: var(--bg); color: var(--dark); }
+
+.wrapper { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
+
+/* Header Section */
+.main-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 80px; 
+    gap: 40px; 
+}
+
+h1 { font-size: 3.5rem; font-weight: 800; color: #000000; line-height: 1.1; }
+.accent-text { color: var(--primary); font-style: italic; }
+.subtitle { font-size: 1.1rem; color: var(--gray); margin: 20px 0; max-width: 450px; }
+
+/* QR Card */
+.qr-card-premium {
+    background: white; padding: 25px; border-radius: 30px;
+    display: flex; align-items: center; gap: 20px; box-shadow: var(--shadow);
+    border: 1px solid #f1f5f9;
+}
+.qr-box { background: #f8fafc; padding: 12px; border-radius: 20px; border: 1px solid #eee; }
+.qr-box img { display: block; width: 130px; }
+.qr-content h3 { font-size: 0.85rem; color: var(--primary); letter-spacing: 1px; margin-bottom: 5px; }
+.qr-content p { font-size: 0.75rem; color: var(--gray); }
+
+/* Grid de Cards */
+.cards-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+
+.card-item {
+    background: white; padding: 40px 30px; border-radius: 32px;
+    box-shadow: var(--shadow); cursor: pointer; transition: all 0.3s ease;
+    border: 1px solid transparent; position: relative;
+}
+
+.card-item:hover { transform: translateY(-8px); border-color: #e2e8f0; }
+
+.icon-header { width: 55px; height: 55px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 25px; }
+.icon-purple { background: #f5f3ff; color: #6366f1; }
+.icon-pink { background: #fff1f2; color: #ec4899; }
+
+.card-item h3 { font-size: 1.25rem; margin-bottom: 12px; color: #334155; }
+.card-item p { color: var(--gray); font-size: 0.95rem; line-height: 1.5; }
+
+/* Expansão de Informação */
+.expand-info { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+.card-item.active .expand-info { max-height: 250px; margin-top: 20px; padding-top: 20px; border-top: 1px solid #f1f5f9; }
+
+.contact-list { list-style: none; padding: 0; }
+.contact-list li { font-size: 0.9rem; margin-bottom: 10px; color: var(--dark); }
+.contact-list strong { color: var(--primary); }
+
+.urgent { background: linear-gradient(to bottom right, #ffffff, #fffafa); border-left: 4px solid var(--secondary); }
+
+/* Estilização da Animação Personalizada */
+.animation-container { margin-top: 30px; }
+.my-custom-animation {
+    width: 60px;
+    height: 60px;
+    /* Aqui você pode colocar o fundo da sua animação se for CSS */
+}
+
+footer { text-align: center; margin-top: 100px; color: #cbd5e1; font-size: 0.7rem; letter-spacing: 2px; }
+
+@media (max-width: 900px) {
+    .main-header { flex-direction: column; text-align: center; }
+    h1 { font-size: 2.8rem; }
+    .subtitle { margin: 20px auto; }
+}

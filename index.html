@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acolhimento à Mulher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="wrapper">
+        <header class="main-header">
+            <div class="header-text">
+                <h1>Acolhimento para <br> <span class="accent-text">Mulheres e Mães Solo</span></h1>
+                <p class="subtitle">Um espaço de apoio e informação de direitos. <br> Juntas, somos mais fortes.</p>
+                
+                <div class="animation-container">
+                    <div class="my-custom-animation"></div>
+                </div>
+            </div>
+
+            <div class="qr-card-premium">
+                <div class="qr-box">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://exemplo.com&color=6366f1" alt="QR Code">
+                </div>
+                <div class="qr-content">
+                    <h3>GUIA DIGITAL COMPLETO</h3>
+                    <p>Aponte a câmera e acesse</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="cards-container">
+            <div class="card-item" onclick="expandCard(this)">
+                <div class="icon-header icon-purple">💜</div>
+                <h3>Apoio Jurídico e Social</h3>
+                <p>Orientação sobre seus direitos e auxílios do governo.</p>
+                <div class="expand-info">
+                    <p>Informações detalhadas sobre Pensão Alimentícia, Guarda Compartilhada e acesso ao Bolsa Família/Auxílios Estaduais.</p>
+                </div>
+            </div>
+
+            <div class="card-item" onclick="expandCard(this)">
+                <div class="icon-header icon-pink">🛡️</div>
+                <h3>Rede de Proteção</h3>
+                <p>Combate à violência e suporte psicológico especializado.</p>
+                <div class="expand-info">
+                    <p>Atendimento psicossocial para mulheres em situação de risco, visando o fortalecimento da autoestima e autonomia financeira.</p>
+                </div>
+            </div>
+
+            <div class="card-item urgent" onclick="expandCard(this)">
+                <div class="icon-header">📞</div>
+                <h3>Contatos de Emergência</h3>
+                <p>Canais diretos de ajuda em Penápolis e Região.</p>
+                <div class="expand-info">
+                    <ul class="contact-list">
+                        <li><strong>CREAS Valdemar Ferreira:</strong> (18) 3653-2579</li>
+                        <li><strong>Polícia Militar:</strong> 190 </li>
+                        <li><strong> Escuta Especializada:</strong> (18) 3653-4400</li>
+                        <li><strong>Centro de Integração da Cidadania:</strong> (18) 3652-5307</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            PROJETO EXTENSIONISTA | UFBRA | ENGENHARIA DE SOFTWARE | SABRINA BOLSANELI
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
