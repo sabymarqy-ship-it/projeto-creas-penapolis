@@ -7,7 +7,7 @@ Projeto desenvolvido como parte da iniciativa de extensão universitária da **U
 ## 🔗 Demonstração
 O site pode ser visualizado através do link abaixo:
 
-[Acesse o Portal Aqui](https://seu-link-aqui.com)
+[Acesse o Portal Aqui][(https://sabymarqy-ship-it.github.io/projeto-creas-penapolis/)]
 
 ---
 
